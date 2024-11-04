@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    width: 100%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+header > nav {
+    display: flex;
+    align-items: center;
+}
+.Gmail {
+    color: whitesmoke;
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 17px;
+    margin-top: 17px;
+}
+.Gmail:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.imgsearch {
+    color: whitesmoke;
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 17px;
+    margin-top: 17px;
+}
+.imgsearch:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 13px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background {
+    background-color: rgba(167, 167, 167, 0.15);
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    opacity: 0;
+}
+.container:hover .background {
+    opacity: 1;
+}
+.apps {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    z-index: 1;
+}
+.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 2px;
+    position: relative; 
+    z-index: 1;
+}
+
+.logo-container {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 270px;
+    height: auto;
+}
+.search-container {
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    background-color: whitesmoke;
+    width: 52%;
+    height: 47px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.magnifier {
+    width: 20px;
+    height: auto;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+.input-container {
+    position: relative;
+    width: 81%;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.input {
+    position: absolute;
+    background-color: whitesmoke;
+    border: 1px;
+    width: 81%;
+    padding-bottom: 2px;
+    font-size: 17px;
+    z-index: 1;
+    opacity: 0;
+}
+input:focus {
+    outline: none;
+    opacity: 1;
+}
+input:focus ~ .here {
+    opacity: 0;
+}
+
+.here {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    color: rgb(89, 89, 89);
+}
+
+.mic, .lens {
+    width: 25px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.mic:hover, .lens:hover {
+    cursor: pointer;
+}
+
+.contents-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 25vh;
+}
+.contents > a {
+    text-decoration: none;
+}
+.contents {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-container {
+    position: relative;
+    border-radius: 5px;
+    width: 110px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content-background {
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    opacity: 0;
+}
+.content-container:hover .content-background {
+    opacity: 1;
+    cursor: pointer;
+}
+.menu-container {
+    width: 25px;
+    min-height: 25px;
+    border-radius: 50%;
+    transform: translate(40px,15px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    overflow: hidden;
+    
+}
+.menu-background {
+    background-color: rgb(245, 245, 245,0.1);
+    width: 25px;
+    min-height: 25px;
+    border-radius: 50%;
+    transform: translate(40px,-10px);
+    opacity: 0;
+    z-index: 1;
+}
+.menu-background:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.menu-icon {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+}
+.content-container:hover .menu-container {
+    opacity: 1;
+    transition: 0.15s ease-in-out 0.5s;
+}
+.icon-container {
+    background-color: rgb(76, 75, 75);
+    border-radius: 50%;
+    width: 50px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    transform: translate(0,-25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.icon-container:hover, .icon:hover {
+    cursor: pointer;
+}
+.icon {
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
+}
+.name {
+    font-size: 13px;
+    color: whitesmoke;
+    transform: translate(0,-25px);
+    z-index: 1;
+}
+.name:hover {
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    display: flex;
+    padding-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-container {
+    position: relative;
+    margin-top: 27px;
+    margin-bottom: 19px;
+    margin-left: 18px;
+    width: 130px;
+    height: 50px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-background {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%; 
+    height: 100%;
+    opacity: 0.7;
+}
+.left-container:hover .left-background {
+    opacity: 0.2;
+    cursor: pointer;
+}
+.left-content {
+    color: whitesmoke;
+    font-size: 13px;
+    text-decoration: underline;
+    z-index: 1;
+}
+.left-content:hover {
+    cursor: pointer;
+}
+.right-container {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-right: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-background {
+    position: absolute;
+    background-color: black;
+    width: 100%; 
+    height: 100%;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-container:hover .right-background {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.pencil {
+    position: absolute;
+    width: 13px;
+    height: auto;
+    z-index: 1;
+}
+.right-content:hover, .pencil:hover {
+    cursor: pointer;
+}
