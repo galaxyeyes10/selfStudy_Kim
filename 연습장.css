@@ -275,15 +275,14 @@ footer {
     height: 100%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 .left-container {
     position: relative;
-    margin-top: 27px;
-    margin-bottom: 19px;
-    margin-left: 18px;
+    margin-top: 33px;
+    margin-left: 15px;
     width: 130px;
-    height: 50px;
+    height: 55px;
     border-radius: 7px;
     overflow: hidden;
     display: flex;
@@ -296,12 +295,14 @@ footer {
     width: 100%; 
     height: 100%;
     opacity: 0.7;
+
 }
 .left-container:hover .left-background {
     opacity: 0.2;
     cursor: pointer;
 }
 .left-content {
+    position: absolute;
     color: whitesmoke;
     font-size: 13px;
     text-decoration: underline;
